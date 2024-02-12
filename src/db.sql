@@ -10,3 +10,12 @@ CREATE DATABASE certificates
     CONNECTION LIMIT = -1
     IS_TEMPLATE = False;
 
+CREATE TABLE public.certificates
+(
+    id integer NOT NULL,
+    description varchar NOT NULL,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO Certificates (id, description)
+VALUES (1, 'Test data for certificate');
