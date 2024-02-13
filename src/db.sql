@@ -1,6 +1,6 @@
 DROP DATABASE IF EXISTS certificates;
 
-CREATE DATABASE certificates
+CREATE DATABASE cert
     WITH
     OWNER = postgres
     ENCODING = 'UTF8'
@@ -17,5 +17,5 @@ CREATE TABLE public.certificates
     PRIMARY KEY (id)
 );
 
-INSERT INTO Certificates (id, description)
+INSERT INTO certificates (id, description)
 VALUES (1, 'Test data for certificate');
