@@ -6,5 +6,5 @@ import java.util.Optional;
 public interface Dao <T>{
   //read more about optional
   Optional<T> get(long id) throws SQLException;
-  long create(T t);
+  boolean add(T t);
 }

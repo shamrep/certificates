@@ -1,4 +1,4 @@
 package org.cert.model;
 
-public record Customer(long id, String email) {
+public record Customer(long id, String email, String password) {
 }

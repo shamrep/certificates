@@ -7,7 +7,7 @@ public class DataSourceManager {
   private static PGSimpleDataSource dataSource = new PGSimpleDataSource();
 
    static {
-     dataSource.setURL("jdbc:postgresql://localhost:5432/certificates");
+     dataSource.setURL("jdbc:postgresql://localhost:5432/cert");
      dataSource.setUser("postgres");
      dataSource.setPassword("1234");
    }
