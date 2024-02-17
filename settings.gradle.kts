@@ -1,2 +1,2 @@
-rootProject.name = "certificates"
-
+rootProject.name = "cert"
+include("app")
