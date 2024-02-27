@@ -15,17 +15,21 @@ public class CertificateDaoImpl implements Dao<Certificate> {
 
   private DataSource dataSource;
 
+  public CertificateDaoImpl() {
+    this.dataSource = DataSourceManager.getDataSource();
+  }
+
   CertificateDaoImpl(DataSource dataSource) {
     this.dataSource = dataSource;
   }
 
   public static void main(String[] args) throws SQLException {
 //    Connection connection =
-    CertificateDaoImpl impl = new CertificateDaoImpl(DataSourceManager.getDataSource());
-    CustomerDaoImpl impl1 = new CustomerDaoImpl(DataSourceManager.getDataSource());
-
-    impl1.add(new Customer(2, "test@email", "123456"));
-    impl.get(1l);
+//    CertificateDaoImpl impl = new CertificateDaoImpl();
+//    CustomerDaoImpl impl1 = new CustomerDaoImpl(DataSourceManager.getDataSource());
+//
+//    impl1.add(new Customer(2, "test@email", "123456"));
+//    impl.get(1l);
   }
 
   @Override

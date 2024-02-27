@@ -1,5 +1,6 @@
 package org.cert.service;
 
+import org.cert.dao.CertificateDaoImpl;
 import org.cert.dao.Dao;
 import org.cert.model.Certificate;
 
@@ -8,6 +9,10 @@ import java.util.List;
 import java.util.Optional;
 
 public class CertificateServiceImpl implements CertificateService {
+
+  public CertificateServiceImpl() {
+    this.certificateDao = new CertificateDaoImpl();
+  }
 
   private Dao<Certificate> certificateDao;
 

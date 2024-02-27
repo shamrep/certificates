@@ -2,6 +2,7 @@ plugins {
 //    id("java")
     application
     war
+    id("org.gretty") version "4.1.0"
 }
 
 //group = "org.example"
@@ -18,6 +19,8 @@ dependencies {
 //    implementation("org.apache.tomcat:tomcat-jsp-api:11.0.0-M16")
 //    implementation("org.apache.tomcat.embed:tomcat-embed-core:11.0.0-M16")
 //    implementation("org.apache.tomcat.embed:tomcat-embed-core:10.1.17")
+
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.16.1")
 
     implementation ("org.apache.tomcat.embed:tomcat-embed-core:10.1.5")
     implementation ("org.apache.tomcat.embed:tomcat-embed-jasper:10.1.5")
